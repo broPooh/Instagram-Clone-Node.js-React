@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  color: #262626;
+  font-family: sans-serif;
+  padding-top: 80px;
+}
+
+ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  width: 935px;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeInFromHalf {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+.create, .posts, .login, .register, .edit_profile, .loader_wrapper {
+  animation: 0.5s fadeIn ease;
+}
+
+.results {
+  animation: 0.3s fadeIn ease;
+}
+
+.results li {
+  animation: 0.4s fadeIn ease-in;
+}
+
+.modal {
+  animation: 0.2s fadeIn ease-out;
+}
+
+.modal .modal_wrapper {
+  animation: 0.2s fadeIn ease-out;
+}
+
+.modal .modal_wrapper .left_wrapper img {
+  animation: 0.1s fadeIn ease-out;
+}
+
+@keyframes toRight {
+  from {left: -100%}
+  to {left: 0%}
+}
+
+@keyframes toLeft {
+  from {left: 0%}
+  to {left: -100%}
+}
+
+.mobile_list {
+  animation: 0.2s toRight forwards;
+}
+
+.toLeft {
+  animation: 0.3s toLeft forwards;
+}

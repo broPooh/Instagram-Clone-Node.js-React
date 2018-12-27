@@ -1,0 +1,36 @@
+.container.edit {
+  padding-top: 45px;
+}
+
+.edit > div {
+  float: left;
+}
+
+.edit h1 {
+  border: 1px solid;
+  margin-left: 30px;
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.edit .message {
+  color: red;
+  display: block;
+  width: 100%;
+}
+
+.edit .btn {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  margin-top: 20px;
+}
+
+.edit .edit_menu li {
+  margin-top: 15px;
+  color: #888;
+}
+
+.edit .edit_menu li.active {
+  color: #262626;
+}

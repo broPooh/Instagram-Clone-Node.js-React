@@ -1,0 +1,24 @@
+.user .menu {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  height: 50px;
+}
+
+.user .menu > li {
+  float: left;
+  width: 33%;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.user .menu > li > div {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  padding: 0px 15px;
+  padding-top: 1px;
+  border-top: 1px solid #262626;
+  color: #888;
+}

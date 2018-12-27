@@ -1,0 +1,10 @@
+.gits
+client/node_modules
+server/node_modules
+server/public/images/*
+!server/public/images
+client/src/modules/server.js
+server/modules/config.js
+#*.css
+#client/**/*.css
+#server/**/*.css

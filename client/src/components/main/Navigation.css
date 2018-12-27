@@ -1,0 +1,202 @@
+nav, nav ul.desktop {
+  width: 1010px;
+}
+
+nav, nav ul.desktop li {
+  animation: 0.2s long forwards;
+
+}
+
+nav.scrolled, nav.scrolled ul.desktop li {
+  animation: 0.2s short forwards;
+}
+
+@keyframes short {
+  from {height: 78px; line-height: 78px;}
+  to {height: 52px; line-height: 52px;}
+}
+
+@keyframes long {
+  from {height: 52px; line-height: 52px;}
+  to {height: 78px; line-height: 78px;}
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0.5px 0.5px 1px #ccc;
+}
+
+nav > ul {
+  position: relative;
+  width: 100%;
+  height: 78px;
+}
+
+nav ul li {
+  float: left;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+}
+
+nav ul li a, nav ul li span {
+  position: relative;
+  color: #888;
+}
+
+nav ul li a.active {
+  color: #262626;
+}
+
+nav ul.top > li:nth-of-type(1) {
+  height: 100%;
+  font-size: 28px;
+}
+
+nav ul.top > li:nth-of-type(2) {
+  font-size: 22px;
+  margin-left: 35px;
+}
+
+nav ul.top > li:nth-of-type(3) {
+  position: absolute;
+  width: 350px;
+  border: 0px solid;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul.top > li:nth-of-type(4) {
+  float: right;
+  font-size: 22px;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+nav ul.top > li:nth-of-type(5) {
+  float: right;
+  font-size: 22px;
+  margin-right: 25px;
+}
+
+nav ul.desktop.top > li:nth-of-type(1) a {
+  border-right: 1px solid #ccc;
+  padding-right: 25px;
+}
+
+nav ul.desktop.top > li:nth-of-type(2) a {
+  left: -15px !important;
+}
+
+nav ul.desktop.top > li:nth-of-type(3) .search {
+  height: 100%;
+}
+
+nav ul.desktop.top > li:nth-of-type(3) .search input {
+  position: relative;
+  width: 60%;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #f8f8f8;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    padding-top: 50px;
+  }
+
+  nav, nav > ul {
+    height: 50px;
+  }
+
+  nav, nav > ul, nav.scrolled, nav.scrolled > ul {
+    animation: '';
+  }
+
+  nav > .container {
+    padding: 0px;
+  }
+
+  nav > ul.mobile {
+    position: relative;
+    width: 100%;
+  }
+
+  nav > ul.mobile > li {
+    height: 50px;
+    line-height: 50px;
+    border: 0px solid;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav > ul.mobile > li:nth-of-type(1) {
+    position: absolute;
+    left: 0px;
+    width: 75px;
+    font-size: 24px;
+  }
+
+  nav > ul.mobile > li:nth-of-type(2) {
+    position: relative;
+    margin-left: 0px;
+    width: 200px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav > ul.mobile > li:nth-of-type(2) .search input {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fafafa;
+  }
+
+  nav > ul.mobile > li:nth-of-type(2) > i {
+    position: absolute;
+    top: 12.5px;
+    right: 15px;
+    font-size: 20px;
+  }
+
+  .mobile_list {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 5px 5px #888;
+  }
+
+  .mobile_list li {
+    position: relative;
+    float: none;
+    width: 100% !important;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background: #fdfdfd;
+    text-align: left;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  .mobile_list li i {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+
+  .mobile_list li:first-child {
+    border-top: 1px solid #ccc;
+  }
+}

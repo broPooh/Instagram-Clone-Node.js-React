@@ -1,0 +1,17 @@
+.tPost .icons {
+  position: relative;
+  width: 100%;
+  display: block;
+  font-size: 32px;
+  height: 44px;
+  padding-right: 15px;
+}
+
+.tPost .icons i {
+  position: relative;
+  padding: 0 5px;
+}
+
+.tPost .icons i.active {
+  color: pink;
+}

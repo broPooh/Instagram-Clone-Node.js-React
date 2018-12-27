@@ -1,0 +1,110 @@
+.post {
+  position: relative;
+  width: 33.3%;
+  border: 0px solid #ccc;
+  padding-top: 33.3%;
+  float: left;
+  background:;
+}
+
+.post .wrapper {
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  margin: 10px;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.post .wrapper:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.post .data {
+  position: absolute;
+  display: inline-block;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+}
+
+.post .data:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.post .wrapper img {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.post .wrapper video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.post .wrapper ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  display: block;
+  left: 5%;
+  width: 90%;
+  padding: 0;
+}
+
+.post .wrapper ul li {
+  float: left;
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  width: 50%;
+}
+
+.post .wrapper ul li > div {
+  position: relative;
+  display: inline-block;
+}
+
+.post .wrapper ul li:first-child > div {
+  left: 20px;
+}
+
+.post .wrapper ul li:last-child > div {
+  right: 20px;
+}
+
+.post_button {
+  float: right;
+}
+
+.post .dots_wrapper {
+  position: absolute;
+  border: 0px solid #fff;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+
+.post .dot {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 100%;
+  float: left;
+  margin: 0 3px;
+  opacity: 0.8;
+}

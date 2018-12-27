@@ -1,0 +1,62 @@
+.dialog {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: none;
+}
+
+.dialog > div {
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.dialog > div > div {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  height: 75px;
+}
+
+.dialog > div > div:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.dialog > div p {
+  line-height: 75px;
+  padding-left: 15px;
+}
+
+.dialog > div .buttons {
+  position: relative;
+  margin: auto;
+
+}
+
+.dialog > div button {
+  position: relative;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+}
+
+.dialog > div .btn_0 {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.dialog > div .btn_1 {
+  margin: 0 15px;
+  border: 0px solid;
+}

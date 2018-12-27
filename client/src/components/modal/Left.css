@@ -1,0 +1,57 @@
+.modal .left_wrapper {
+  overflow: hidden;
+}
+
+.modal .left_wrapper i {
+  font-size: 28px;
+}
+
+.modal .left_wrapper .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  opacity: 0.75;
+  z-index: 1001;
+}
+
+.modal .left_button {
+  left: 15px;
+}
+
+.modal .right_button {
+  right: 15px;
+}
+
+.modal .left_wrapper {
+  background: #000;
+}
+
+.modal .left_wrapper img, .modal .left_wrapper video {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100% !important;
+  height: auto !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal .left_wrapper .dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal .left_wrapper .dot {
+  float: left;
+  width: 6px;
+  height: 6px;
+  background: #888;
+  border-radius: 100%;
+  margin: 0 3px;
+}
+
+.modal .left_wrapper .dot.active {
+  background: #fff;
+}

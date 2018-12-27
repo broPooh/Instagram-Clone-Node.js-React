@@ -1,0 +1,15 @@
+.right_footer .icons > li {
+  font-size: 32px;
+  padding: 1.5px 5px;
+  font-weight: normal;
+}
+
+.right_footer .icons > li.balloon {
+  position: relative;
+  left: 0px;
+  top: -2px;
+}
+
+.right_footer .icons > li i.active {
+  color: pink;
+}

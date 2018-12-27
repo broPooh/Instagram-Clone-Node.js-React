@@ -1,0 +1,41 @@
+body {
+  padding: 0px;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font: 14px sans-serif;
+  background: #fafafa;
+  color: #262626;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav {
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  width: 1024px;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}

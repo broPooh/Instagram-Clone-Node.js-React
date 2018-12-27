@@ -1,0 +1,77 @@
+.tPost .images {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.tPost .images .wrapper {
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+}
+
+.tPost .images .wrapper img, .tPost .images .wrapper video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.tPost .images .dots_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  bottom: 15px;
+  text-align: center;
+}
+
+.tPost .images .dots_wrapper .dots {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tPost .images .dots .dot {
+  position: relative;
+  background: #888;
+  color: #888;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  z-index: 100;
+  margin: 0 4px;
+}
+
+.tPost .images .dots .dot.active {
+  background: #fff;
+  color: #fff;
+}
+
+.tPost .images .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  opacity: 0.75;
+  z-index: 1001;
+}
+
+.tPost .images .button i {
+  font-size: 28px;
+}
+
+.tPost .left_button {
+  left: 15px;
+}
+
+.tPost .right_button {
+  right: 15px;
+}
+
+.tPost .left_wrapper {
+  background: #000;
+}
